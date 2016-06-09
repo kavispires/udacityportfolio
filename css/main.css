@@ -55,6 +55,44 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #5e5b4d;
+    font-weight: 300;
+}
+
+.linebreak:after {
+    content:"\a";
+    white-space: pre;
+}
+
+/* ==================
+   HEADER
+   ================== */
+
+.header-logo {
+    margin-top: 20px;
+    max-width: 60px;
+}
+
+.header-name {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.header-subtitle {
+    font-size: 14px;
+}
+
+hr {
+    border-top: 3px solid #593e9b;
+    display: none;
+}
+
+.text-muted {
+    color: #BCBBBB;
+}
+
 
 
 
