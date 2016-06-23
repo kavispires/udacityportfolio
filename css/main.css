@@ -61,27 +61,24 @@ body {
     font-weight: 300;
 }
 
-.linebreak:after {
-    content:"\a";
-    white-space: pre;
-}
-
 /* ==================
    HEADER
    ================== */
 
 .header-logo {
     margin-top: 20px;
-    max-width: 60px;
+    max-width: 65px;
 }
 
 .header-name {
-    font-weight: 300;
     font-size: 25px;
+    font-weight: 300;
+    color: #3d3257;
 }
 
 .header-subtitle {
-    font-size: 14px;
+    font-size: 13px;
+    color: #3d3257;
 }
 
 hr {
@@ -89,32 +86,104 @@ hr {
     display: none;
 }
 
-.text-muted {
-    color: #BCBBBB;
+/* ==================
+   CONTENT
+   ================== */
+
+.feature-work h2 {
+    font-size: 25px;
+    color: #bcbbbb;
 }
 
+.feature-work h3 {
+    font-size: 22px;
+}
 
+.feature-work-card {
+    margin-bottom: 20px;
+}
 
+.image-center {
+    margin: 0 auto;
+}
 
+.modal-description {
+    margin-top: 20px;
+}
 
+/* ==================
+   FOOTER
+   ================== */
 
+footer {
+    background: #483c64;
+    padding: 10px 0;
+}
 
-
-
-
-
-
-
-
+.footer-link {
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+}
 
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
+@media screen and (max-width: 400px) {
+    .header-name {
+        font-size: 20px;
+    }
 }
+
+@media screen and (min-width: 401px) {
+    .header-name {
+        font-size: 25px;
+    }
+
+    .feature-work h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .header-logo {
+        max-width: 95px;
+    }
+
+    .header-name {
+        font-size: 45px;
+    }
+
+    .header-subtitle {
+        font-size: 20px;
+    }
+
+    .feature-work h2 {
+        font-size: 30px;
+    }
+
+    .feature-work h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-name {
+        font-size: 55px;
+    }
+
+    .linebreak {
+        display: none;
+    }
+}
+
+
+
+
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
